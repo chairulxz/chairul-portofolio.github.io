@@ -37,9 +37,13 @@ body {
 .overlay:target img {
     animation: fade .5s;
     position: fixed;
-    max-width: 100%;
-    max-height: 90%;
-    right: 35%;
+    max-width: 80%;
+    max-height: 80%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
 }
 .overlay a{
 	display: none;
