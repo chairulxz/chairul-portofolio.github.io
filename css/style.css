@@ -10,6 +10,7 @@ body {
     margin-right: 20px;
 }
 .overlay {
+    display: block;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -22,7 +23,7 @@ body {
     text-align: center;
     padding: 60px;
 }
-.overlay:target {
+.overlay:target{
     width: auto;
     height: auto;
     bottom: 0;
@@ -35,6 +36,10 @@ body {
 }
 .overlay:target img {
     animation: fade .5s;
+    position: fixed;
+    max-width: 100%;
+    max-height: 90%;
+    right: 35%;
 }
 .overlay a{
 	display: none;
@@ -45,15 +50,16 @@ body {
 
 .overlay .close {
     position: absolute;
-    top: 5px;
-    left: 47%;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    border: 1px solid white;
-    line-height: 4px;
-    padding: 5px;
-    opacity: 0;
+	top: 30px;
+	left: 47%;
+	margin-left: -20px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	line-height: 10px;
+	border:1px solid white;
+	padding: 5px;
+	opacity: 0;
 }
 .overlay:target .close {
     animation: slidedownfade .5s .5s forwards;
@@ -69,7 +75,7 @@ section {
 .portofolio {
     background-color: #eee;
     margin-top: -200px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .contact {
     min-height: 800px;
